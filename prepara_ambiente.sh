@@ -100,7 +100,7 @@ if [ ! -f $location ]; then
     git config --global credential.helper 'cache --timeout=99999999'
 
     echo "\n Passo 2 - Etapa (4/4) - Gerando chave ssh "
-    ssh-keygen -t -rsa -C $email -b 4096
+    ssh-keygen -t rsa -C $email -b 4096
 
 
     echo "\n\n==== ATENÇÃO ===="
